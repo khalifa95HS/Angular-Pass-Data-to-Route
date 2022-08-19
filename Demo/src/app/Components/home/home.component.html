@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- Content here -->
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">Static data</div>
+          <div class="card-body">
+            <h5 class="card-title">send data to the root static</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a class="btn btn-primary" [routerLink]="['static']"
+              >Go to static component</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header">Dynamic Data</div>
+          <div class="card-body">
+            <h5 class="card-title">send data to the route dynamicly</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a
+              class="btn btn-primary"
+              [routerLink]="['dynamic']"
+              [state]="{ id: 1, name: 'data comming dynamicly' }"
+              >Go to Dynamic component</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
